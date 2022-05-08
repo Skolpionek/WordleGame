@@ -212,7 +212,7 @@ p{
    color: #121213;
    transition: .1s;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
    .key {
       height: 40px;
       width: 30px;
@@ -231,7 +231,7 @@ p{
    }
    #alert{
       width: 100vw;
-   height: 100vh;
+      height: 100vh;
    }
    #keyboard{
       width: 380px;
