@@ -253,6 +253,10 @@ p{
    #password {
       font-size: 35px;
    }
+   #alert{
+      width: 100vw;
+   height: 100vh;
+   }
    :root{
       --cell-size:50px;
    }
