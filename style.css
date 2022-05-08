@@ -233,15 +233,28 @@ p{
    #keyboard{
       width: 380px;
    }
-   :root{
-      --cell-size:50px;
-   }
    #cell-container{
       gap: 6px;
    }
    .container{
-      font-size: 15px;
       width: 380px;
+   }
+   #restart{
+      height: 40px;
+      width: 200px;
+      margin: 40px 0;
+      font-size: 30px;
+      font-weight: 700;
+   }
+   #message{
+      font-size: 45px !important;
+      font-weight: 700;
+   }
+   #password {
+      font-size: 35px;
+   }
+   :root{
+      --cell-size:50px;
    }
 }
 
