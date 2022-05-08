@@ -1,0 +1,229 @@
+:root{
+   --cell-size:60px;
+}
+nav{
+   position: fixed;
+   top: 0;
+   border: 1px solid #808080;
+   color: white;
+   height: 51px;
+   display: flex;
+   align-items: center;
+   width: 100vw;
+   justify-content: center;
+   background-color: #121213;
+}
+nav button{
+   position: fixed;
+   left: 15px;
+}
+nav h1{
+   display: inline-block;
+   margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+}
+body{
+   margin: 0;
+   background-color: rgb(20, 20, 20);
+   min-height: calc(100vh - 90px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 90px;
+}
+#cell-container{
+   width: calc(var(--cell-size) * 6);
+   height: calc(var(--cell-size) * 7);
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 10px;
+   
+}
+.cell{
+   width: var(--cell-size);
+   height: var(--cell-size);
+   background-color: rgb(20, 20, 20);
+   border: 2px solid rgb(117, 117, 117);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 35px;
+   user-select: none;
+}
+.key{
+   height: 50px;
+   width: 40px;
+   background-color: rgb(162, 162, 162);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   border-radius: 5px;
+   cursor: pointer;
+   user-select: none;
+}
+#keyboard{
+   display: flex;
+   flex-wrap: wrap;
+   width: calc(var(--cell-size) * 8 );
+   height: 200px;
+   gap: 5px;
+   margin-top: 120px;
+   justify-content: center;
+}
+.a{
+   margin-left: 20px;
+}
+.l{
+   margin-right: 20px;
+}
+.ent{
+   width: 60px;
+}
+.bck{
+   width: 60px;
+}
+.almost{
+   background-color: #b59f3b;
+   border: 2px solid #b59f3b;
+   animation-name: flip;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+}
+.correct{
+   background-color: #538d4e;
+   border: 2px solid #538d4e;
+   animation-name: flip;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+}
+.incorrect{
+   background-color: rgb(117, 117, 117);
+   animation-name: flip;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+}
+#alert{
+   position: fixed;
+   width: 60vw;
+   height: 80vh;
+   background-color: rgb(20, 20, 20);
+   border: 2px solid rgb(117, 117, 117);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   color: white;
+   bottom: 7vh;
+   transition: 0.5s;
+}
+#message{
+   font-size: 65px;
+   font-weight: 800;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#password{
+   font-size: 45px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#restart{
+   height: 50px;
+   width: 400px;
+   margin: 40px;
+   font-size: 40px;
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border: rgb(20, 20, 20) 2px solid;
+   transition: 0.5s;
+   color: rgb(20, 20, 20);
+}
+#restart:hover{
+   transition: 0.5s;
+   color: white;
+   background-color: rgb(20, 20, 20);
+   border: white 2px solid;
+}
+.disabled{
+   bottom: -100vh !important;
+   transition: 0.5s;
+}
+.info-disabled{
+   left: -100vw !important;
+   transition: 0.5s !important;
+}
+button{
+   user-select: none;
+}
+
+#info{
+   background-color: #121213;
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   color: white;
+   transition: 0.5s;
+   top: 0;
+}
+.container{
+   width: 450px;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 75px;
+}
+h1{
+   text-align: center;
+   position: relative;
+}
+p{
+   border-bottom: 1px solid gray;
+   padding-bottom: 20px;
+}
+#close{
+   position: absolute;
+   right: 0;
+   top: 10px;
+}
+#close, #Qmark{
+   background-color: #12121300;
+   color: white;
+   border: 2px solid white;
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .1s;
+}
+#close:hover, #Qmark:hover{
+   background-color: white;
+   color: #121213;
+   transition: .1s;
+}
+
+@keyframes flip {
+   0%{
+      transform: rotateX(0deg);
+      background-color: black;
+      border: 2px solid rgb(117, 117, 117);
+   }
+   50%{
+      transform: rotateX(90deg);
+      
+   }
+   100%{
+      transform: rotateX(0deg);
+   }
+}

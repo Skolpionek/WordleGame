@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script type="module" src="script.js" defer></script>
+   <script type="module" src="words.js" defer></script>
+</head>
+<body>
+   <nav>
+      <button id="Qmark">?</button>
+      <h1>
+         Wordle
+      </h1>
+   </nav>
+   <div id="cell-container">
+      <div class="cell" data-cell id="index00"></div>
+      <div class="cell" data-cell id="index01"></div>
+      <div class="cell" data-cell id="index02"></div>
+      <div class="cell" data-cell id="index03"></div>
+      <div class="cell" data-cell id="index04"></div>
+      <div class="cell" data-cell id="index10"></div>
+      <div class="cell" data-cell id="index11"></div>
+      <div class="cell" data-cell id="index12"></div>
+      <div class="cell" data-cell id="index13"></div>
+      <div class="cell" data-cell id="index14"></div>
+      <div class="cell" data-cell id="index20"></div>
+      <div class="cell" data-cell id="index21"></div>
+      <div class="cell" data-cell id="index22"></div>
+      <div class="cell" data-cell id="index23"></div>
+      <div class="cell" data-cell id="index24"></div>
+      <div class="cell" data-cell id="index30"></div>
+      <div class="cell" data-cell id="index31"></div>
+      <div class="cell" data-cell id="index32"></div>
+      <div class="cell" data-cell id="index33"></div>
+      <div class="cell" data-cell id="index34"></div>
+      <div class="cell" data-cell id="index40"></div>
+      <div class="cell" data-cell id="index41"></div>
+      <div class="cell" data-cell id="index42"></div>
+      <div class="cell" data-cell id="index43"></div>
+      <div class="cell" data-cell id="index44"></div>
+      <div class="cell" data-cell id="index50"></div>
+      <div class="cell" data-cell id="index51"></div>
+      <div class="cell" data-cell id="index52"></div>
+      <div class="cell" data-cell id="index53"></div>
+      <div class="cell" data-cell id="index54"></div>
+   </div>
+   <div id="keyboard">
+      <div class="key" data-key>Q</div>
+      <div class="key" data-key>W</div>
+      <div class="key" data-key>E</div>
+      <div class="key" data-key>R</div>
+      <div class="key" data-key>T</div>
+      <div class="key" data-key>Y</div>
+      <div class="key" data-key>U</div>
+      <div class="key" data-key>I</div>
+      <div class="key" data-key>O</div>
+      <div class="key" data-key>P</div>
+      <div class="key a" data-key>A</div>
+      <div class="key" data-key>S</div>
+      <div class="key" data-key>D</div>
+      <div class="key" data-key>F</div>
+      <div class="key" data-key>G</div>
+      <div class="key" data-key>H</div>
+      <div class="key" data-key>J</div>
+      <div class="key" data-key>K</div>
+      <div class="key l" data-key>L</div>
+      <div class="key ent" id="enter" data-key>ENTER</div>
+      <div class="key" data-key>Z</div>
+      <div class="key" data-key>X</div>
+      <div class="key" data-key>C</div>
+      <div class="key" data-key>V</div>
+      <div class="key" data-key>B</div>
+      <div class="key" data-key>N</div>
+      <div class="key" data-key>M</div>
+      <div class="key bck" id="bck" data-key>BCK</div>
+   </div>
+   <div id="alert" class="disabled">
+      <div id="message">
+         You Won!
+      </div>
+      <div id="password">password was</div>
+      <button id="restart">TRY AGAIN</button>
+   </div>
+   <div id="info" class="info-disabled">
+      <div class="container">
+         <h1>HOW TO PLAY<button id="close">X</button></h1>
+      <p>
+         Guess the <b>WORDLE</b> in six tries.<br><br>
+         Each guess must be a valid five-letter word. Hit the enter button to submit.<br><br>
+         After each guess, the color of the tiles will change to show how close your guess was to the word.
+      </p>
+      <div class="examples">
+         <b>Examples</b><br>
+         <img src="Img/correct.png" alt="Letter W has green background"><br>
+         The letter <b>W</b> is in the word and in the correct spot.
+         <img src="Img/almost.png" alt="Letter I has yellow background"><br>
+         The letter <b>I</b> is in the word but in the wrong spot.
+         <img src="Img/incorrect.png" alt="Letter u has gray background"><br><br>
+         The letter <b>U</b> is not in the word in any spot.
+      </div>
+      </div>
+      
+   </div>
+</body>
+</html>
