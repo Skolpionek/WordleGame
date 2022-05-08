@@ -239,6 +239,9 @@ p{
    #cell-container{
       gap: 6px;
    }
+   .container{
+      font-size: 15px;
+   }
 }
 
 @keyframes flip {
