@@ -212,7 +212,6 @@ p{
    color: #121213;
    transition: .1s;
 }
-
 @media only screen and (max-width: 700px){
    .key {
       height: 40px;
@@ -229,6 +228,10 @@ p{
    }
    .bck{
       width: 55px;
+   }
+   #alert{
+      width: 100vw;
+   height: 100vh;
    }
    #keyboard{
       width: 380px;
@@ -253,13 +256,10 @@ p{
    #password {
       font-size: 35px;
    }
-   #alert{
-      width: 100vw;
-   height: 100vh;
-   }
    :root{
       --cell-size:50px;
    }
+   
 }
 
 @keyframes flip {
